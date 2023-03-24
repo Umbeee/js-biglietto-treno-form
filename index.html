@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <main class="bg-danger text-white">
+        <div class="container text-center">
+        <h1 class="text-uppercase">calcola il prezzo del tuo biglietto</h1>
+
+        <div class="bg-white rounded-3 p-2">
+            <!-- <form action=""> -->
+                <input type="text" placeholder="Nome e Cognome" value="" id="nomeCognome">
+                <input type="number" placeholder="Km da percorrere" step="0.1" value="" id="kmViaggio">
+                <select name="fascia-anni" id="fasciaEta">
+                    <option value="maggiorenne">maggiorenne</option>
+                    <option value="over_65">over 65</option>
+                    <option value="minorenne">minorenne</option>
+                </select>
+                
+                <div class="p-3">
+                    <button onclick="acquistaBiglietto()">Crea biglietto</button>
+                </div>
+            <!-- </form>   -->
+        </div>
+        
+        <h2 class="text-uppercase">il tuo biglietto</h2>
+
+        <div class="bg-white rounded-3 p-2 my-4">
+            <div class="bg-secondary container">
+                <div class="row">
+                    <div class="col-3">
+                        <h4 class="text-uppercase">Nome passeggero</h4>
+                        <span id="span-nome"></span>
+                    </div>
+                    <div class="col-9 row">
+                        <div class="col-3">
+                            <h4>Offerta</h4>
+                            <span id="span-eta"></span>
+                        </div>
+                        <div class="col-3">
+                            <h4>Numero carrozza</h4>
+                            <span>4</span>
+                        </div>
+                        <div class="col-3">
+                            <h4>codice cp</h4>
+                            <span>23454</span>
+                        </div>
+                        <div class="col-3">
+                            <h4>Costo</h4>
+                            <span>10$</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>    
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <script src="./assets/main.js"></script>
+</body>
+</html>
